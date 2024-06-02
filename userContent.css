@@ -317,6 +317,66 @@ background-color: rgba(255, 255, 255, 0.3) !important;
  padding:1px 0px
 }
 
+.v-window.v-message-box-window {
+ --v-message-box-window-bkg-color__container: rgba(198, 212, 224, 0.4);
+ --v-message-box-window-opacity__container: 1;
+ --v-message-box-window-border-radius:  16px !important;
+ --v-message-box-window-color__panel: var(--v-color-font-tier1);
+ --v-message-box-window-padding__panel: 0;
+ --v-message-box-window-padding__panel-body--is-password: 16px 20px 0 20px;
+ --v-message-box-window-border-radius__panel: 8px;
+ --v-message-box-window-padding__wrapper: 16px 20px 0 20px;
+ --v-message-box-window-font-size__password-desc: var(--v-font-size-tier1);
+ --v-message-box-window-line-height__password-desc: var(--v-line-height-100);
+ --v-message-box-window-padding__password-desc: 4px 0;
+ --v-message-box-window-margin__password-form: 6px 0 0 0;
+ --v-message-box-window-margin__password-form-item: 0;
+ --v-message-box-window-width__password-input: 200px;
+ --v-message-box-window-padding__password-fbar: 28px 30px 20px 30px;
+ --v-message-box-window-padding__body: 24px 30px 0 30px;
+ --v-message-box-window-margin-top__body--with-icon: 20px;
+ --v-message-box-window-margin-top__body--with-icon-title: 26px;
+ --v-message-box-window-font-size__progress-title: var(--v-font-size-tier1);
+ --v-message-box-window-line-height__progress-title: var(--v-line-height-100);
+ --v-message-box-window-font-size__progress-percent: var(--v-font-size-tier1);
+ --v-message-box-window-line-height__progress-percent: var(--v-line-height-100);
+ --v-message-box-window-margin-top__progress-outer: 8px;
+ --v-message-box-window-bkg-color__progress-outer: rgba(80, 90, 100, 0.15);
+ --v-message-box-window-border-radius__progress: var(--v-border-radius-100);
+ --v-message-box-window-height__progress: 6px;
+ --v-message-box-window-bkg-color__progress-inner: var(--v-color-blue);
+ --v-message-box-window-font-size__progress-info: var(--v-font-size-tier1);
+ --v-message-box-window-font-weight__progress-info: var(--v-font-weight-normal);
+ --v-message-box-window-padding__progress-info: 0;
+ --v-message-box-window-margin-top__progress-info: 8px;
+ --v-message-box-window-padding__progress-title-wrapper: 0;
+ --v-message-box-window-color__progress-info: var(--v-color-font-tier2);
+ --v-message-box-window-line-height__progress-info: var(--v-line-height-100);
+ --v-message-box-window-top__icon-wrapper: -14px;
+ --v-message-box-window-left__icon-wrapper: 30px;
+ --v-message-box-window-size__icon-wrapper: 48px;
+ --v-message-box-window-box-shadow__icon-wrapper: 0 6px 12px 0 rgba(230, 64, 64, 0.15);
+ --v-message-box-window-border-radius__icon-wrapper: 24px;
+ --v-message-box-window-bkg-color__icon-wrapper--alarm: #E64040;
+ --v-message-box-window-top__dialog-icon: 8px;
+ --v-message-box-window-left__dialog-icon: 8px;
+ --v-message-box-window-size__dialog-icon--alarm: 32px;
+ --v-message-box-window-font-size__dialog-title: 16px;
+ --v-message-box-window-line-height__dialog-title: var(--v-line-height-200);
+ --v-message-box-window-margin-bottom__dialog-title: 12px;
+ --v-message-box-window-padding__dialog-content: 0px;
+ --v-message-box-window-font-size__dialog-content: var(--v-font-size-tier1);
+ --v-message-box-window-line-height__dialog-content: var(--v-line-height-100);
+ --v-message-box-window-margin__fbar-wrapper: 0;
+ --v-message-box-window-padding__fbar-wrapper: 28px 30px 20px 30px;
+ --v-message-box-window-margin-left__fbar-btn--pull-left: 0;
+ --v-message-box-window-margin-right__fbar-btn--pull-left: 8px;
+ --v-message-box-window-padding-right__fbar--pull-right: 0;
+ --v-message-box-window-custom: false;
+ border-radius:var(--v-message-box-window-border-radius);
+ overflow:visible
+}
+
 /* ############## address bar ################# */
 .x-window-tbar {
     padding: 0px !important;
@@ -1176,6 +1236,19 @@ background-color: rgba(255,255,255,.5) !important;
   border-radius:  16px !important;
   padding: 12px;
   background-color:  rgba(255,255,255,.8) !important;
+}
+
+.v-notification-container .v-notification-panel {
+ right:0px;
+ opacity:1;
+ width:320px;
+ min-height:58px;
+ position:relative;
+ background-color: rgba(255,255,255,.5) !important;
+ box-shadow:0px 2px 6px rgba(0,0,0,.5);
+ border-radius: 16px !important;
+ transition:top 300ms ease-in-out 0ms,right 500ms ease-out 0s,opacity 500ms ease-out 0s;
+    backdrop-filter: blur(20px) brightness(120%) contrast(1) saturate(2);  
 }
 
 /* ################ account info panel ################ */
